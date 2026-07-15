@@ -12,7 +12,7 @@ func main() {
 	var reply string
 	args := Args{}
 
-	client, err := rpc.DialHTTP("tcp", "localhost:2233")
+	client, err := rpc.DialHTTP("tcp", "192.168.68.1:2233")
 	if err != nil {
 		log.Fatal("Dialing error:", err)
 	}
